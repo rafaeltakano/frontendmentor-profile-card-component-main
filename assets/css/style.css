@@ -1,0 +1,124 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --clr-dark-cyan: hsl(185, 75%, 39%);
+  --clr-very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --clr-dark-grayish-blue: hsl(227, 10%, 46%);
+  --clr-dark-gray: hsl(0, 0%, 59%);
+  --font-family: "Kumbh Sans", sans-serif;
+  --font-size: 1.125rem;
+}
+
+*,
+*::after,
+*::before {
+  font-family: var(--font-family);
+  font-weight: 400;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--clr-dark-cyan);
+  background-image: url("../../images/bg-pattern-top.svg"), url("../../images/bg-pattern-bottom.svg");
+  background-position: right calc(47vw + 15%) bottom calc(65vh - 15vw), left calc(40vw + 25%) top calc(72vh - 15vw);
+  background-repeat: no-repeat;
+}
+
+footer {
+  color: hsl(0deg, 0%, 100%);
+  margin-top: 5rem;
+}
+footer a {
+  color: var(--clr-very-dark-desaturated-blue);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+hr {
+  border: 1px solid transparent;
+  border-top-color: hsl(0deg, 0%, 83%);
+  margin-bottom: 0.75rem;
+}
+
+.card {
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 1rem;
+  text-align: center;
+}
+.card__pattern {
+  width: 100%;
+}
+.card__pattern img {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  width: 100%;
+}
+.card__profile {
+  position: relative;
+}
+.card__profile__img img {
+  border: 0.25rem solid hsl(0deg, 0%, 100%);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 150%;
+  right: 35%;
+}
+.card__profile__details {
+  margin-top: 5rem;
+}
+.card__profile__details .user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+.card__profile__details .user__name h1 {
+  color: var(--clr-very-dark-desaturated-blue);
+  font-size: var(--font-size);
+  font-weight: 700;
+}
+.card__profile__details .user__age p {
+  color: var(--clr-dark-grayish-blue);
+  font-size: var(--font-size);
+}
+.card__profile__details .location {
+  margin-bottom: 1.75rem;
+}
+.card__profile__details .location p {
+  color: var(--clr-dark-gray);
+}
+.card__ratings {
+  display: flex;
+  justify-content: space-evenly;
+}
+.card__ratings .ratings {
+  padding: 0.75rem 1rem 1.5rem;
+}
+.card__ratings .ratings h2 {
+  color: var(--clr-very-dark-desaturated-blue);
+  font-size: var(--font-size);
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+.card__ratings .ratings p {
+  color: var(--clr-dark-grayish-blue);
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+}
+
+/*# sourceMappingURL=style.css.map */
