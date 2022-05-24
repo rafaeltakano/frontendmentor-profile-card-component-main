@@ -48,6 +48,10 @@ footer a {
   text-decoration: none;
 }
 
+ul {
+  list-style-type: none;
+}
+
 hr {
   border: 1px solid transparent;
   border-top-color: hsl(0deg, 0%, 83%);
